@@ -1,6 +1,6 @@
 [project]
 name = "pycols"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
   {name="Leander Kafemann", email="leander@kafemann.berlin" },
 ]
@@ -17,4 +17,4 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/LK-PyPi/naturalsize"
+Homepage = "https://github.com/LeanderKafemann/pycols"
