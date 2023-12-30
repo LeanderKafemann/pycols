@@ -3,12 +3,16 @@ PYCOLS
 funcs:
 about -- information about your release
 classes:
+Fore -- font styling tools
+Back -- background styling tools
+Style -- Style changing tools
+color -- all tools united with further features
 """
 def about():
     """
     Returns information about your release and other projects by LK
     """
-    return {"Version":(1, 0, 0), "Author":"Leander Kafemann", date:"30.12.2023", recommend:("Büro by LK", "Verschlüsseler by LK", "flappy bird by LK", "isolated_env by LK"), feedbackTo: "leander@kafemann.berlin"}
+    return {"Version":(1, 0, 1), "Author":"Leander Kafemann", date:"30.12.2023", recommend:("Büro by LK", "Verschlüsseler by LK", "flappy bird by LK", "pyimager by LK", "naturalsize by LK"), feedbackTo: "leander@kafemann.berlin"}
 
 class Fore:
     """
