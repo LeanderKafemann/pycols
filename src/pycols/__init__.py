@@ -12,7 +12,7 @@ def about():
     """
     Returns information about your release and other projects by LK
     """
-    return {"Version":(1, 0, 1), "Author":"Leander Kafemann", date:"30.12.2023", recommend:("Büro by LK", "Verschlüsseler by LK", "flappy bird by LK", "pyimager by LK", "naturalsize by LK"), feedbackTo: "leander@kafemann.berlin"}
+    return {"Version":(1, 0, 2), "Author":"Leander Kafemann", "date":"13.08.2024", "recommend":("Büro by LK", "Verschlüsseler by LK", "flappy bird by LK", "pyimager by LK", "naturalsize by LK"), "feedbackTo": "leander@kafemann.berlin"}
 
 class Fore:
     """
@@ -29,6 +29,7 @@ class Fore:
         for i in range(8):
             self.LLIST.append("LIGHT_"+self.NLIST[i])
             self.LCLIST.append(self.CLIST[i].replace("[3", "[9"))
+            
 class Back(Fore):
     """
     contains background colors
@@ -41,6 +42,7 @@ class Back(Fore):
             if i < 8:
                 self.BLCLIST.append(self.LCLIST[i].replace("[9", "[10"))
             self.BCLIST.append(self.CLIST[i].replace("[3", "[4"))
+            
 class Style:
     """
     contains styles for font
@@ -49,6 +51,7 @@ class Style:
         self.BRIGHT = '\x1b[1m'
         self.DIM = "\x1b[2m"
         self.RESET = "\x1b[22m"
+        
 class color(Style, Back):
     """
     contains all defined values
@@ -63,7 +66,7 @@ class color(Style, Back):
         Back.__init__(self)
         self.RESET_ALL = "\x1b[0m"
         import colorama
-        colorama.init()
+        colorama.init()#neccessary for initializing command codes in system shell
     def col(self, name: str = "BLACK"):
         """
         Gives back code of given color
