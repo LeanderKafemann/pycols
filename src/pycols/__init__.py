@@ -12,7 +12,7 @@ def about():
     """
     Returns information about your release and other projects by LK
     """
-    return {"Version":(1, 0, 2), "Author":"Leander Kafemann", "date":"13.08.2024", "recommend":("Büro by LK", "Verschlüsseler by LK", "flappy bird by LK", "pyimager by LK", "naturalsize by LK"), "feedbackTo": "leander@kafemann.berlin"}
+    return {"Version":(1, 0, 3), "Author":"Leander Kafemann", "date":"22.10.2024", "recommend":("Büro by LK",  "pyimager by LK", "naturalsize by LK"), "feedbackTo": "leander@kafemann.berlin"}
 
 class Fore:
     """
@@ -66,7 +66,7 @@ class color(Style, Back):
         Back.__init__(self)
         self.RESET_ALL = "\x1b[0m"
         import colorama
-        colorama.init()#neccessary for initializing command codes in system shell
+        colorama.init() #neccessary for initializing command codes in system shell
     def col(self, name: str = "BLACK"):
         """
         Gives back code of given color
